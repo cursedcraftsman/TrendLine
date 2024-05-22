@@ -1,0 +1,187 @@
+ 
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1e2a38;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+ 
+ 
+
+main {
+    margin-top: 20px;
+}
+
+.featured {
+    margin-bottom: 20px;
+   
+}
+
+.featured h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+     
+}
+
+.featured article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.featured article .content {
+    margin-bottom: 10px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-grid article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-grid article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.news-grid article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sports {
+    margin-top: 40px;
+}
+
+.sports h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.sports-card {
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sports-card img {
+    width: 40%;
+    height: 20%;
+}
+
+.sports-card .content {
+    padding: 20px;
+    flex: 1;
+}
+
+.sports-card .content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #f0a500;
+}
+
+ 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    header .logo {
+        margin-bottom: 10px;
+    }
+    
+    header nav ul {
+        justify-content: center;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sports-card {
+        flex-direction: column;
+    }
+
+    .sports-card img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured h2, .sports h2 {
+        font-size: 1.5em;
+    }
+
+    .featured article, .news-grid article, .sports-card .content {
+        padding: 10px;
+    }
+}
